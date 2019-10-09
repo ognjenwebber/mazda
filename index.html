@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  
+  <style>
+               h3,p {
+						
+	background:rgba(0,0,0,0.5);					
+						
+				
+  }
+				.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }	
+  
+  
+  footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  color: white;
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color:#007bff;
+  text-decoration:none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+
+
+  </style>
+
+</head>
+<body style="height:1500px;">
+
+<form action="/action_page.php" class="form-inline bg-dark" style="color:white;">
+
+<div class="form-group">
+	
+	<label for="email3" class=" mr-sm-3"> e mail </label>
+	<input type="email" id="email3" name="email" class="form-control  mr-sm-3 bg-light" placeholder="unesi svoj e-mail"> 
+	
+</div>
+
+<div class="form-group">
+
+	<label for="pwd3" class=" mr-sm-3"> šifra </label>
+	<input type="password" id="pwd3" name="pswd" placeholder="unesi svoju šifru" class="form-control mr-sm-3 bg-light">
+
+	
+
+
+</div>
+
+
+<div class="form-group form-check mr-sm-3">
+	
+	<label class="form-check-label mr-sm-3">
+	<input class="form-check-input mr-sm-3" type="checkbox" name="remember"> Zapamti me </input>
+	</label>
+	</div>
+	
+	<button type="submit" class="btn btn-danger"> Pošalji </button> <span class="form-text" style="margin-left:20px;color:#dc3545;">Voliš Mazdu? Mudar izbor, postani pretplatnik i budi uvek u toku... </span>
+
+</form>
+
+
+<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top" style="border-bottom:1px solid lightgrey">
+	
+		<a class="navbar-brand" href="#">  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Mazda_Motor_logo.svg/1089px-Mazda_Motor_logo.svg.png" alt="Mazda-logo" width="50px">       </a>
+		<a class="navbar-brand" href="#"> Zastupništvo Slijepčević         </a>
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mazda"> 
+		<span class="navbar-toggler-icon"> </span>
+	</button>
+	
+	
+	
+	<div class="collapse navbar-collapse" data-toggle="dropdown" id="mazda">
+		
+			<ul class="navbar-nav">
+			
+				<li class="nav-item"> 
+					<a class="nav-link" href="#"> Početna </a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#"> Info </a>
+				</li>
+				
+				<li class="nav-item">
+				<a class="nav-link" href="#"> Kontakt </a>
+				</li>	
+				
+				
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbardrop" > Modeli </a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item">  Mazda 3       </a>
+							<a class="dropdown-item">  Mazda 3 sedan       </a>
+							<a class="dropdown-item">  Mazda CX-5       </a>
+				
+				         </div>
+					</li>	
+			
+			</ul>
+		</div>
+		<form class="form-inline" type="form-control mr-md-3" style="margin-left:80px;">
+			<input class="form-control mr-md-" type="text" placeholder="Pretraga...">
+				<button class="btn btn-primary" type="submit"> Nađi </button>
+		
+		
+		</form>
+<span class="navbar-text">		
+<div class="btn-group btn-group-sm">
+  <button type="button" class="btn btn-primary ml-5"style="height:23px;">Lokacija</button>
+  <button type="button" class="btn btn-primary" style="height:23px;">Video</button>
+  <button type="button" class="btn btn-primary" style="height:23px;">Proba</button>
+  <button type="button" class="btn btn-primary" style="height:23px;">Cenovnik</button>
+  <button type="button" class="btn btn-primary" style="height:23px;">Servis</button>
+</div>
+</span>
+    </div>
+		
+	
+	
+	
+</nav>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark" style="border-bottom:1px solid lightgrey">
+	
+		
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mazda"> 
+		<span class="navbar-toggler-icon"> </span>
+	</button>
+	
+	
+	
+	<div class="collapse navbar-collapse justify-content-center" data-toggle="dropdown" id="mazda">
+		
+			<ul class="navbar-nav">
+			
+				<li class="nav-item"> 
+					<a class="nav-link" href="#"> Pregled </a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#"> Dizajn </a>
+				</li>
+				
+				<li class="nav-item">
+				<a class="nav-link" href="#"> Performanse </a>
+				</li>	
+
+				<li class="nav-item"> 
+					<a class="nav-link" href="#"> Specifikacija i cene </a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#"> Rent a car </a>
+				</li>
+				
+				<li class="nav-item">
+				<a class="nav-link" href="#"> Prijatelj MX-5 </a>
+				</li>
+
+              	<li class="nav-item">
+				<a class="nav-link" href="#"> MX-5 TAKUMI </a>
+				</li>	
+
+				<li class="nav-item"> 
+					<a class="nav-link" href="#"> Popust  </a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#"> Tuning </a>
+				</li>
+				
+				<li class="nav-item">
+				<a class="nav-link" href="#"> Forum </a>
+				</li>	
+
+				<li class="nav-item"> 
+					<a class="nav-link" href="#"> Posebna ponuda </a>
+				</li>
+				
+				<li class="nav-item">
+					<a class="nav-link" href="#"> Mazda experience</a>
+				</li>	
+</nav>
+   
+   <div class="container">
+    
+	<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://imagesvc.timeincapp.com/v3/foundry/image/?q=70&w=1440&url=https%3A%2F%2Fapi.thedrive.com%2Fwp-content%2Fuploads%2F2019%2F01%2Fmiata-rf-hero.jpg%3Fquality%3D85" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Mazda mx-5 u starom duhu</h3>
+        <p>Nanovo oduzima dah!</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.car-bags.com/images/stories/virtuemart/product/m30701s-mazda-mx-5-nc-2005-2015-car-bags-1.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Belo je uvek in</h3>
+        <p>Beli mx-5 je must have </p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="https://img.gta5-mods.com/q95/images/2015-mazda-mx-5-addon/04d9c1-MX-5-1-edit.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Royal plava <h3>
+   
+		
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+   <div class="row" style="margin-top:30px;">
+   
+  <div class="col-sm-">
+  <h3>„Jinba Ittai”.  </h3>Kada vozite Mazdu, nikada ne vozite sami. Automobil i vozač u savršenom skladu. Poput konja i njegova jahača – nešto što nazivamo „Jinba Ittai”. Vjerujemo da vožnja postaje zabavna kada se postigne jedinstvo. Činimo to na nama svojstven način jer su naši automobili mnogo više od sredstava za vožnju od točke A do točke B. Ljepota stvorena oduzimanjem. Istinska je to i intuitivna veza, spona koja se ne može opisati riječima. Zajedno smo jači. Nikad ne vozimo sami. Vozimo zajedno.</div>
+  <div class="col-sm-"> <h3> Mazda Spirit </h3>Same tehnologije ne mogu stvoriti jedinstvo između automobila i njegova vozača – osim ako vozač nije u središtu procesa dizajniranja. Zbog toga sva svoja stručna znanja usmjeravamo na područja koja pospješuju tu povezanost. Za nas je položaj vozača u vožnji ishodište koncepta Jinba Ittai, stoga ga koncipiramo vodeći se pristupom u čijem je središtu čovjek tako da prilikom dizajniranja sve elemente vozila prilagodimo vozaču. </div>
+  <div class="col-sm-"> <h3>Mazda milina </h3> Automobil unaprjeđujete onim što mu dodajete i onim što uklanjate iz njega. Čistoća usavršenog KODO dizajna novi je korak u evoluciji kojim su uklonjene linije koje ne doprinose dinamičnom dojmu automobila, pa je tako ljepota stvorena oduzimanjem. Saznajte kako Mazda stvara automobile koji utjelovljuju dinamičnu ljepotu života.</div>
+</div>
+   
+   </div>
+   
+   <footer class="mainfooter" role="contentinfo">
+  <div class="footer-middle">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4><img src="http://pngimg.com/uploads/mazda/mazda_PNG70.png" width="80"></h4>
+          <ul class="list-unstyled">
+            <li><a href="#"></a></li>
+            <li><a href="#">Početna</a></li>
+            <li><a href="#">Info</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <li><a href="#">Modeli</a></li>
+           
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4><img src="http://www.pngall.com/wp-content/uploads/2/Mazda-PNG-Images.png" width="80"></h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Lokacija</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Proba</a></li>
+            <li><a href="#">Cenovnik</a></li>
+            <li><a href="#">Servis</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <!--Column1-->
+        <div class="footer-pad">
+          <h4><img src="http://pngimg.com/uploads/mazda/mazda_PNG124.png" width="80"></h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Pregled</a></li>
+            <li><a href="#">Dizajn</a></li>
+            <li><a href="#">Performanse</a></li>
+            <li><a href="#">Specifikacije i cena</a></li>
+            <li><a href="#">Prijatelj MX-5</a></li>
+            <li>
+              <a href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    	<div class="col-md-3">
+    		<h4>Follow Us</h4>
+            <ul class="social-network social-circle">
+             <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+             <li><a href="#" class="icoInstagram" title="Linkedin"><i class="fa fa-instagram"></i></a></li>
+            </ul>				
+		</div>
+    </div>
+	<div class="row">
+		<div class="col-md-12 copy">
+			<p class="text-center">&copy; Copyright 2019 - Mazda i Ognjen Slijepčević. Sva prava zadržali u zdravlju i veselju.</p>
+		</div>
+	</div>
+
+
+  </div>
+  </div>
+</footer>
+  
+</body>
+</html>
